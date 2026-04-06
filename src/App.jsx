@@ -1,5 +1,6 @@
 
 import Hero from './sections/Hero'
+import Menu from './sections/Menu'
 import Navbar from './sections/Navbar'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <main>
         <Navbar />
         <Hero/>
+        <Menu/>
       
     </main>
   )
