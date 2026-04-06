@@ -14,7 +14,7 @@ function Navbar() {
   }
 
   return (
-    <header className="fixed z-50 flex w-full flex-wrap items-center justify-between px-24 py-5 max-[690px]:px-8 max-[800px]:px-3 max-[1000px]:px-10 md:py-6 ">
+    <header className="fixed z-50 flex w-full flex-wrap items-center justify-between px-24 py-5 max-[690px]:px-8  max-[1000px]:px-10 md:py-6 ">
       <a href="#" className="text-2xl font-bold lowercase tracking-tight text-slate-900">
         restaurant
       </a>
