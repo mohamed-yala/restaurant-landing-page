@@ -4,7 +4,7 @@ import { dishes } from '../data/dishesData'
 
 function Menu() {
   return (
-    <div className='relative bg-zinc-100 pb-12 '>
+    <div className='relative bg-zinc-100 pb-12 max-[450px]:w-[100%] '>
 
         <img className='absolute left-[10%] top-10 w-[150px]' src='Group.png'/>
         <img className='absolute right-[10%] top-10 w-[130px]' src='Group (1).png'/>
@@ -13,7 +13,7 @@ function Menu() {
         <img className='absolute left-[25%] w-[100px] bottom-0' src='Group (5).png'/>
 
         <div className='text-center pt-12'>
-            <h1 className='font-serif text-[38px] font-semibold'>Our Special Dishes</h1>
+            <h1 className='font-serif text-[38px] font-semibold max-[380px]:text-[32px]'>Our Special Dishes</h1>
             <p className='text-zinc-500'>Discover our most popular dishes that will tantalize your taste buds.</p>
         </div>
 

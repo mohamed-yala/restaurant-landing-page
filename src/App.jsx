@@ -1,5 +1,6 @@
 
 import Chef from './sections/Chef'
+import Footer from './sections/Footer'
 import Hero from './sections/Hero'
 import Menu from './sections/Menu'
 import Navbar from './sections/Navbar'
@@ -13,6 +14,7 @@ function App() {
         <Menu/>
         <Welcome/>
         <Chef/>
+        <Footer/>
       
     </main>
   )
