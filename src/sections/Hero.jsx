@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div className='flex  items-center min-h-[100vh]'>
 
-      <div className='flex w-full px-20 justify-between items-center mt-20 max-[1000px]:px-10 max-[800px]:flex-col max-[800px]:mt-28  '>
+      <div className='flex w-full px-24 justify-between items-center mt-20 max-[1000px]:px-10 max-[800px]:flex-col max-[800px]:mt-28  '>
 
 
         <div className='w-[50%] max-[958px]:w-full '>
@@ -35,14 +35,14 @@ function Hero() {
         </div>
 
 
-        <div className='relative w-[450px] flex items-center justify-center'>
-            <img className='w-[170px] absolute top-0 right-0' src='Group.png'/>
-            <img className='w-[120px] absolute bottom-[55px] right-0' src='Group (1).png'/>
-            <img className='w-[200px] absolute top-0 left-0' src='Group (2).png'/>
-            <img className='w-[180px] z-20 absolute bottom-16 left-0' src='dish-2 1.png'/>
+        <div className='relative w-[550px]  max-[1198px]:w-[450px] flex items-center justify-center'>
+            <img className='w-[170px] absolute top-0 right-[30px]  max-[1198px]:top-0  max-[1198px]:right-0' src='Group.png'/>
+            <img className='w-[120px] absolute bottom-[65px] right-[20px]  max-[1198px]:bottom-[55px]  max-[1198px]:right-0' src='Group (1).png'/>
+            <img className='w-[200px] absolute top-0 left-0  max-[1198px]:top-0  max-[1198px]:left-0' src='Group (2).png'/>
+            <img className='w-[180px] z-20 absolute bottom-16 left-0  max-[1198px]:bottom-16  max-[1198px]:left-0' src='dish-2 1.png'/>
 
             <div className='w-[500px] z-10 py-12 px-20'>
-             <img className='' src='Mask group.png'/>
+             <img className='w-[100%]' src='Mask group.png'/>
             </div>
 
         </div>
