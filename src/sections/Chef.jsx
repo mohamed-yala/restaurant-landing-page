@@ -12,7 +12,7 @@ function Chef() {
   ]
 
   return (
-    <section className='relative overflow-hidden bg-white'>
+    <section id='chef' className='relative overflow-hidden bg-white'>
       <img
         className='pointer-events-none absolute left-[6%] top-10 w-[150px] opacity-60 max-[900px]:hidden'
         src='Group (2).png'

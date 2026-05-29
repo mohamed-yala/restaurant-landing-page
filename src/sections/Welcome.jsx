@@ -3,7 +3,7 @@ import Button from '../components/Button'
 
 function Welcome() {
   return (
-    <section className='relative overflow-hidden bg-zinc-100'>
+    <section id='about' className='relative overflow-hidden bg-zinc-100'>
       <img
         className='pointer-events-none absolute left-[6%] top-10 w-[140px] opacity-60 max-[900px]:hidden'
         src='Group.png'

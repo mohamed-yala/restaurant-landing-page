@@ -9,13 +9,12 @@ import Welcome from './sections/Welcome'
 function App() {
   return (
     <main>
-        <Navbar />
-        <Hero/>
-        <Menu/>
-        <Welcome/>
-        <Chef/>
-        <Footer/>
-      
+      <Navbar />
+      <Hero />
+      <Menu />
+      <Welcome />
+      <Chef />
+      <Footer />
     </main>
   )
 }

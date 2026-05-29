@@ -6,7 +6,7 @@ function Footer() {
   const dishes = ['Fish & Veggies', 'Tofu Chilli', 'Egg & Cucumber', 'Lumpia w/Suace']
 
   return (
-    <footer className='relative overflow-hidden bg-white'>
+    <footer id='contact' className='relative overflow-hidden bg-white'>
       <div className='mx-auto max-w-[1200px] px-4 py-16 max-[1200px]:px-4 max-[1000px]:px-10'>
         <div className='grid grid-cols-[1.2fr_0.7fr_0.8fr_0.7fr] gap-10 text-sm text-slate-500 max-[1000px]:grid-cols-2 max-[700px]:grid-cols-1'>
           <div>

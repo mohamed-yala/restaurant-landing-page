@@ -1,9 +1,9 @@
 export const navItems = [
-  { label: 'Menu', href: '#' },
-  { label: 'Gallery', href: '#' },
-  { label: 'Events', href: '#' },
-  { label: 'About', href: '#' },
-  { label: 'Contact', href: '#' },
+  { label: 'Home', href: '#home' },
+  { label: 'Menu', href: '#menu' },
+  { label: 'About', href: '#about' },
+  { label: 'Chef', href: '#chef' },
+  { label: 'Contact', href: '#contact' },
 ]
 
 export const ctaButton = {

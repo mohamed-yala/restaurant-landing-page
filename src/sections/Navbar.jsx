@@ -1,9 +1,20 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Button from '../components/Button'
 import { ctaButton, navItems } from '../data/navbarData'
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10)
+    }
+
+    handleScroll()
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const handleMenuToggle = () => {
     setIsMenuOpen((prev) => !prev)
@@ -14,8 +25,12 @@ function Navbar() {
   }
 
   return (
-    <header className="fixed z-50 flex w-full flex-wrap items-center justify-between px-24 py-5 max-[690px]:px-8  max-[1000px]:px-10 md:py-6 ">
-      <a href="#" className="text-2xl font-bold lowercase tracking-tight text-slate-900">
+    <header
+      className={`fixed z-50 flex w-full flex-wrap items-center justify-between px-24 py-5 transition-all duration-300 max-[690px]:px-8 max-[1000px]:px-10 md:py-6 ${
+        isScrolled ? 'bg-white/90 shadow-sm backdrop-blur' : 'bg-transparent'
+      } ${isMenuOpen ? 'max-[690px]:bg-white/90 max-[690px]:shadow-sm max-[690px]:backdrop-blur' : ''}`}
+    >
+      <a href="#home" className="text-2xl font-bold lowercase tracking-tight text-slate-900">
         restaurant
       </a>
 
@@ -34,7 +49,9 @@ function Navbar() {
         </button>
 
         <div className="hidden min-[690px]:block">
-          <Button text={ctaButton.text} color={ctaButton.color} />
+          <a href="#contact">
+            <Button text={ctaButton.text} color={ctaButton.color} />
+          </a>
         </div>
 
       </div>
@@ -54,7 +71,9 @@ function Navbar() {
           </a>
         ))}
 
-        <Button text={ctaButton.text} color={ctaButton.color} className="mt-2 w-full min-[690px]:hidden" />
+        <a href="#contact" onClick={handleMenuClose} className="w-full min-[690px]:hidden">
+          <Button text={ctaButton.text} color={ctaButton.color} className="mt-2 w-full" />
+        </a>
       </nav>
     </header>
   )

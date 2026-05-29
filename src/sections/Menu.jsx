@@ -4,7 +4,7 @@ import { dishes } from '../data/dishesData'
 
 function Menu() {
   return (
-    <div className='relative bg-zinc-100 pb-12 max-[450px]:w-[100%] '>
+        <section id='menu' className='relative bg-zinc-100 pb-12 max-[450px]:w-[100%] '>
 
         <img className='absolute left-[10%] top-10 w-[150px]' src='Group.png'/>
         <img className='absolute right-[10%] top-10 w-[130px]' src='Group (1).png'/>
@@ -30,7 +30,7 @@ function Menu() {
             ))}
         </div>
 
-    </div>
+        </section>
   )
 }
 
