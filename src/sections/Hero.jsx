@@ -35,7 +35,7 @@ function Hero() {
         </div>
 
 
-        <div className='relative w-[550px]  max-[1198px]:w-[450px] max-[450px]:w-[380px] flex items-center justify-center'>
+        <div className='relative w-[450px]  max-[1198px]:w-[450px] max-[450px]:w-[380px] flex items-center justify-center'>
             <img className='w-[170px] absolute top-0 right-[30px]  max-[1198px]:top-0  max-[1198px]:right-0' src='Group.png'/>
             <img className='w-[120px] absolute bottom-[65px] right-[20px]  max-[1198px]:bottom-[55px]  max-[1198px]:right-0' src='Group (1).png'/>
             <img className='w-[200px] absolute top-0 left-0  max-[1198px]:top-0  max-[1198px]:left-0' src='Group (2).png'/>

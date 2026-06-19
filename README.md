@@ -82,4 +82,6 @@ npm run preview
 npm run lint
 ```
 
-#
+## Live Preview
+
+🔗 [View Live Demo] https://restaurant-sepia-kappa.vercel.app
